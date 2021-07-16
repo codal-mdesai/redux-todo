@@ -1,10 +1,17 @@
 import React from 'react';
-import Todo from './components/Todo';
-
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
+import './App.css';
+import Currency from './components/Currency';
 const App = () => {
   return (
     <>
-    <Todo />
+    <nav>
+      <NavLink to={"/"}>Home</NavLink>
+    </nav>
+    <Switch>
+      <Route path={"/"} exact component={Currency}></Route>
+      <Redirect to={"/"} />
+    </Switch>
     </>
   )
 }
