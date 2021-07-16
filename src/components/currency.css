@@ -52,3 +52,6 @@ p {
     z-index: 100;
     position: relative;
 }
+.MuiAvatar-img  {
+    width: auto !important;
+}
